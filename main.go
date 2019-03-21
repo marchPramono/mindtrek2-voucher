@@ -45,10 +45,10 @@ func main() {
 	e.POST("/partner", addPartner)
 	e.POST("/voucher", addVoucher)
 	e.GET("/voucherType/{id}", getVoucherType)
+	e.POST("/invoiceItem", addInvoiceItem)
 
 	// e.POST("/invoice")
 
-	// e.POST("/invoice_item", addInvoiceItem)
 	// e.GET("/voucher", getAllVouchers)
 
 	e.Logger.Fatal(e.Start(":2005"))
